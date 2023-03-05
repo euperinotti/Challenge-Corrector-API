@@ -11,7 +11,7 @@ class Correction extends Entity<CorrectionProps> {
         super(props, id)
     }
 
-    public create(props: CorrectionProps, id?: string) {
+    static create(props: CorrectionProps, id?: string) {
         const correction = new Correction(props, id)
 
         return correction
