@@ -5,7 +5,7 @@ type ChallengeProps = {
     title: string
 }
 
-class Challenge extends Entity<ChallengeProps> {
+export class Challenge extends Entity<ChallengeProps> {
     private constructor(props: ChallengeProps, id?: string) {
         super(props, id)
     }
