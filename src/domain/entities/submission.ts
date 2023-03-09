@@ -13,7 +13,10 @@ export class Submission extends Entity<SubmissionProps> {
     }
 
     static create(props: SubmissionProps, id?: string) {
-        const submission = new Submission(props, id)
+        const submission = new Submission({
+            ...props,
+            createdAt: props.createdAt ?? new Date()
+        })
 
         return submission
     }
