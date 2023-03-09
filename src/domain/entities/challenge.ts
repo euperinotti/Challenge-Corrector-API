@@ -13,6 +13,6 @@ export class Challenge extends Entity<ChallengeProps> {
     static create(props: ChallengeProps, id?: string) {
         const challenge = new Challenge(props, id)
 
-        return Challenge
+        return challenge
     }
 }
